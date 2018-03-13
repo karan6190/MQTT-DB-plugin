@@ -3,7 +3,7 @@ var mongodb=require('mongodb');
 var mqtt=require('mqtt')  
 var mongodb=require('mongodb');  
 var mongodbClient=mongodb.MongoClient;  
-var mongodbUrl='mongodb://IP:PORT/IOT     //  DB_Name=IOT
+var mongodbUrl='mongodb://IP:PORT/IOT      
 var deviceRoot="#"  
 var collection,client; 
 var BrokerUrl = 'mqtt://IP:PORT';
