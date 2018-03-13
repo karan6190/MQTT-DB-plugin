@@ -3,7 +3,7 @@ var mongodb=require('mongodb');
 var mqtt=require('mqtt')  
 var mongodb=require('mongodb');  
 var mongodbClient=mongodb.MongoClient;  
-var mongodbUrl='mongodb://IP:PORT/IOT      
+var mongodbUrl='mongodb://IP:PORT/IOT     //  DB_Name=IOT
 var deviceRoot="#"  
 var collection,client; 
 var BrokerUrl = 'mqtt://IP:PORT';
@@ -84,11 +84,11 @@ function insertEvent(topic,message_str, packet) {
   var key=topic.replace(deviceRoot,'');
   collection.insert({
 												
-												'Channel' : topic,												
-												'message' : message_str[0], 
-												'packet' : packet,
-												'when':new  Date(),
-											  },
+		'Channel' : topic,												
+		'message' : message_str[0], 
+		'packet' : packet,
+		'when':new  Date(),
+	  },
 		  function(err,docs) {
 		    if(err)
 				 console.log("Insert fail");
