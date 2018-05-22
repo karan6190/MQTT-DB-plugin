@@ -1,11 +1,9 @@
 var mqtt = require('mqtt'); //https://www.npmjs.com/package/mqtt
 var Topic = '#'; //subscribe to all topics
 var Broker_URL = 'mqtt://MQTT_BROKER_URL';
-<<<<<<< HEAD
 var Database_URL = 'Database_URL';
-=======
-var Database_URL = 'DATABASE_URL';
->>>>>>> e68b7d1ed92a0c2e49d122dadda2ba28a199acd3
+
+
 
 var options = {
 	clientId: 'MyMQTT',
