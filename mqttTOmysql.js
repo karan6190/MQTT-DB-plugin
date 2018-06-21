@@ -16,7 +16,6 @@ var options = {
 var client  = mqtt.connect(Broker_URL, options);
 client.on('connect', mqtt_connect);
 client.on('reconnect', mqtt_reconnect);
-client.on('error', mqtt_error);
 client.on('message', mqtt_messsageReceived);
 client.on('close', mqtt_close);
 
@@ -44,7 +43,6 @@ function after_publish() {
 
 //receive a message from MQTT broker
 function mqtt_messsageReceived(topic, message, packet) {
-	console.log('mqtt_messageReceived :' topic,payload);
 	var message_str = message.toString(); //convert byte array to string
 	console.log("message to string", message_str);
 	message_str = message_str.replace(/\n$/, ''); //remove new line
