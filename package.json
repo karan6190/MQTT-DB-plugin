@@ -1,0 +1,27 @@
+{
+  "name": "mqtt-mysqlplugin",
+  "version": "1.0.0",
+  "description": "Mqtt-DB-Plugin",
+  "main": "mqttTOmysql.js",
+  "dependencies": {
+    "mqtt": "^2.18.1",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karan6190/mosquitto-DB-plugin.git"
+  },
+  "keywords": [
+    "MQTT_DB"
+  ],
+  "author": "karan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karan6190/mosquitto-DB-plugin/issues"
+  },
+  "homepage": "https://github.com/karan6190/mosquitto-DB-plugin#readme"
+}
