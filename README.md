@@ -10,13 +10,13 @@ Whenever any activity happens on MQTT Broker it will Stores the Topic and Payloa
 
 So what you have to do is before activating this plugin, you have to create the table and schema in your MYSQL DB
 Credentials for the DB
-> _DatabaseName=mydb
+> DatabaseName=mydb
 
-> _DatabaseUSerName=newuser
+> DatabaseUSerName=newuser
 
-> _DatabasePassword=mypassword
+> DatabasePassword=mypassword
 
-> _TableName=tbl_messages
+> TableName=tbl_messages
 
 ## How to Use
 
