@@ -43,8 +43,18 @@ function insert_message(topic, message_str, packet) {
 So what you have to do is before activating this plugin, you have to create the table and schema in your MYSQL DB
 Credentials for the DB
 > _DatabaseName=mydb
+
 > _DatabaseUSerName=newuser
+
 > _DatabasePassword=mypassword
+
 > _TableName=tbl_messages
 
+## How to Use
 
+1. move to the directory where you have kepp this plugin
+2. Just Update the MQTT Broker_URL and Database_URL
+3. Make Sure you have install all the required packages if not then 
+4. npm install mqtt --save
+5. npm install mysql-server --save
+6. npm mqttTOmysql.js
