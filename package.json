@@ -9,8 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo mqtt"
     "start": "node mqttTOmysql.js"
+    "test": "echo starting the script"
   },
   "repository": {
     "type": "git",
