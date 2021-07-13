@@ -6,7 +6,7 @@ var Database_URL = 'Database_URL';
 
 
 var options = {
-	clientId: 'MyMQTT',
+	clientId: 'MyMQTT_' + Math.random().toString(16).substr(2, 8), 
 	port: 1883,
 	//username: 'mqtt_user',
 	//password: 'mqtt_password',	
