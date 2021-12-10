@@ -1,4 +1,4 @@
-# MQTT MYSQL NODE  
+# MQTT MYSQL NODE SYNC Save MQTT messages to mySQL / MariaDB
 
 If you have to save data from a MQTT broker into a mysql database.
 
