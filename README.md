@@ -25,3 +25,5 @@ Whenever any activity happens on MQTT Broker it will Stores the Topic and Payloa
 6. npm mqttTOmysql.js
 
 Add a service on the server or start it manually.
+
+Credits to Karan Sharma who wrote the original. I added some minor changes. Contributions welcome!
