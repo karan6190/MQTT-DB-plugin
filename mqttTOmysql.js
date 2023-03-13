@@ -3,8 +3,6 @@ var Topic = '#'; //subscribe to all topics
 var Broker_URL = 'mqtt://MQTT_BROKER_URL';
 var Database_URL = 'Database_URL';
 
-
-
 var options = {
 	clientId: 'MyMQTT_' + Math.random().toString(16).substr(2, 8), 
 	port: 1883,
@@ -31,11 +29,17 @@ function mqtt_subscribe(err, granted) {
 
 function mqtt_reconnect(err) {
     console.log("Reconnect MQTT");
+	// Generate a new user name to prevent the broker from dicconect us directly because the name is already logged in
+	var options = {
+	clientId: 'MyMQTT_' + Math.random().toString(16).substr(2, 8), 
+	port: 1883,
+	//username: 'mqtt_user',
+	//password: 'mqtt_password',	
+	keepalive : 60
+};	
     if (err) {console.log(err);}
 	client  = mqtt.connect(Broker_URL, options);
 };
-
-
 
 function after_publish() {
 	//do nothing
